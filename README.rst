@@ -12,13 +12,11 @@ Niv lab tools for securely serving and storing data from online computational ps
 Quickstart
 ^^^^^^^^^^
 
-The following is the minimal set of commands needed to get started with NivTurk (assuming you have already a virtual machine with python 3.6+ installed):
+The following is the minimal set of commands needed to get started (assuming you have already a virtual machine with python 3.6+ installed):
 
 .. code-block:: bash
 
-    ssh <user-name>@<server-name>.princeton.edu
-    git clone https://github.com/nivlab/nivturk.git
-    cd nivturk
+    git clone https://github.com/ariekahn/policy-sailing-task.git
     pip install -r requirements.txt # For python dependencies
     gunicorn -b 0.0.0.0:9000 --timeout 300 -w 8 app:app
 
